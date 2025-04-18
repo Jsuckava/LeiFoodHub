@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lei's FOODHUB SHOP</title>
+    <link rel="stylesheet" href="prot2.css">
+    <script src="function.jsx"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+
+          <input type="text" class="searchCl" 
+           placeholder="Search" 
+           onkeyup="searchItems()" id="search"
+           onclick="toggleDropdown('dropdownContent')"
+           autocomplete="off">
+
+          <div id="dropdownContent" class="dropdown-content">
+            <ul id="searchList">
+              <li><a href="">CDO</a></li>
+              <li>Purefoods</li>
+              <li>Mommy Loida</li>
+              <li>Frabelle</li>
+            </ul>
+          </div>
+
+          <nav>
+          <a href="prototype1.html">Home</a>
+          <a href="#">Products</a>
+          <a href="#">About us</a>
+        </nav>          
+      </header>
+
+      <div class="grids">
+        <aside>
+            <br><br><br><br>
+            <h1>Product Categories</h1>
+            <br>
+<div class="cdo" onclick="toggleDropdownC()">
+  <span>
+    CDO Products <img src="arrow-down-sign-to-navigate.png" class="icondown1" alt="▼">
+  </span>
+  <hr>
+  <div class="cContent" id="dropdownContentC">
+    <ul>
+      <li><a href="#">CDO IDOL CHEESEDOG</a></li><hr>
+      <li><a href="#">CDO Classic Sweet Ham</a></li><hr>
+      <li><a href="#">CDO HOL Bacon Roll</a></li><hr>
+      <li><a href="#">CDO Pork Longganisa</a></li><hr>
+      <li><a href="#">CDO FUN Longganisa</a></li><hr>
+      <li><a href="#">CDO FUN Y Tocino</a></li><hr>
+      <li><a href="#">CDO Ulam Burger Regular</a></li><hr>
+      <li><a href="#">CDO Ulam Burger Mini</a></li><hr>
+      <li><a href="#">CDO Crispy Ulam Burger</a></li><hr>
+      <li><a href="#">CDO HOL CHEESEDOG Regular</a></li><hr>
+      <li><a href="#">CDO Corned Beef</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="pureF" onclick="toggleDropdownF()">
+  <span>
+    Purefoods Products <img src="arrow-down-sign-to-navigate.png" class="icondown2" alt="▼">
+  </span>
+  <hr>
+  <div class="pureF1" id="dropdownContentF">
+    <ul>
+      <li><a href="#">Purefoods Tender Juicy</a></li><hr>
+      <li><a href="#">Purefoods Tender Juicy Cheese</a></li><hr>
+      <li><a href="#">Purefoods Tender Juicy Jumbo</a></li><hr>
+      <li><a href="#">Purefoods Tender Juicy Cocktail</a></li><hr>
+      <li><a href="#">Purefoods Fun Sulit Chicken Nuggets</a></li><hr>
+      <li><a href="#">Purefoods Breast Nuggets</a></li><hr>
+      <li><a href="#">Purefoods Chicken Nuggets</a></li><hr>
+      <li><a href="#">Purefoods Sweet Ham</a></li><hr>
+      <li><a href="#">Purefoods VIDA Bacon Roll</a></li><hr>
+    </ul>
+  </div>
+</div>
+
+<div class="MomL" onclick="toggleDropdownM()">
+  <span>
+    Mommy Loida <img src="arrow-down-sign-to-navigate.png" class="icondown3" alt="▼">
+  </span>
+  <hr>
+  <div class="MomL1" id="dropdownContentM">
+    <ul>
+      <li><a href="#">SIOPAO ASADO</a></li><hr>
+      <li><a href="#">Mommy Loida SIOMAI</a></li><hr>
+      <li><a href="#">Mommy Loida SHANGHAI</a></li><hr>
+      <li><a href="#">PORK LUNCHEON MEAT</a></li><hr>
+      <li><a href="#">LECHON KAWALI</a></li><hr>
+      <li><a href="#">CHICHARON BULAKLAK</a></li><hr>
+      <li><a href="#">PORK TOCINO</a></li><hr>
+      <li><a href="#">SWEET HAM</a></li><hr>
+      <li><a href="#">GARLIC LONGANISA</a></li><hr>
+      <li><a href="#">PORK SISIG</a></li><hr>
+      <li><a href="#">PORK BOLOGNA</a></li><hr>
+    </ul>
+  </div>
+</div>
+
+<div class="Frab" onclick="toggleDropdownR()">
+  <span>
+    Frabelle Products <img src="arrow-down-sign-to-navigate.png" class="icondown" alt="▼">
+  </span>
+  <hr>
+  <div class="Frab1" id="dropdownContentR">
+    <ul>
+      <li><a href="#">FF PORK LUNCHEON MEAT</a></li><hr>
+      <li><a href="#">FF BOSS BACON</a></li><hr>
+      <li><a href="#">FF BACON CLASSIC</a></li><hr>
+      <li><a href="#">FF BACON REG CLASSIC</a></li><hr>
+      <li><a href="#">FF B SJ CLASSIC</a></li><hr>
+      <li><a href="#">FF B KINGSIZE</a></li><hr>
+      <li><a href="#">FF SULIT KINGSIZE</a></li><hr>
+      <li><a href="#">FF B SJ CHICKEN 1KG</a></li><hr>
+      <li><a href="#">FF B CHICKEN FRANKS</a></li><hr>
+      <li><a href="#">FF B CHICKEN FRANKS CHZ</a></li><hr>
+      <li><a href="#">FF B CHEESEDOG</a></li><hr>
+      <li><a href="#">FF FOOTLONG</a></li><hr>
+      <li><a href="#">FF B REG CHEESEDOG</a></li><hr>
+      <li><a href="#">FF P SUPERKINGSIZE</a></li><hr>
+      <li><a href="#">FF TOCINITOS</a></li><hr>
+      <li><a href="#">FF MIX VEGETABLE</a></li><hr>
+      <li><a href="#">FF CREAM DORY</a></li><hr>
+      <li><a href="#">FF SEAFOODS</a></li><hr>
+    </ul>
+  </div>
+</div>
+
+        </aside>
+        <main>
+            <br>
+            <br>        
+            <br>
+            <br>
+            <section>
+            <div class="wrap-box1">
+              <div>PRODUCT AD 1</div>
+            </div>
+          </section>
+          <section>
+            <div class="wrap-box" id="wrp">
+              <div><a href="pr1.html"><img src=""><p>Purefoods Tender Juicy Hotdog</p><h6>$100</h6></a></div>
+              <div>PRODUCT 2</div>
+              <div>PRODUCT 3</div>
+              <div>PRODUCT 4</div>
+            </div>
+          </section>
+          <section>
+            <div class="wrap-box">
+              <div><a href="pr1.html"><img src=""><p>Purefoods Tender Juicy Hotdog</p><h6>$100</h6></a></div>
+              <div>PRODUCT 6</div>
+              <div>PRODUCT 7</div>
+              <div>PRODUCT 8</div>
+            </div>
+          </section>
+          <section>
+            <div class="wrap-box">
+              <div><a href="pr1.html"><img src=""><p>Purefoods Tender Juicy Hotdog</p><h6>$100</h6></a></div>
+              <div>PRODUCT 10</div>
+              <div>PRODUCT 11</div>
+              <div>PRODUCT 12</div>
+            </div>
+          </section>
+          <section>
+            <div class="wrap-box">
+              <div><a href="pr1.html"><img src=""><p>Purefoods Tender Juicy Hotdog</p><h6>$100</h6></a></div>
+              <div>PRODUCT 14</div>
+              <div>PRODUCT 15</div>
+              <div>PRODUCT 16</div>
+            </div>
+          </section>
+        </main>
+
+
+        <footer>
+      
+      </div>
+</body>
+</html>
