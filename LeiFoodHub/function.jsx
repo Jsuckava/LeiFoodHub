@@ -1,34 +1,3 @@
-//NOTE -  THIS PART IS FOR THE SEARCH BAR OF THE PROT1.1
-function searchItems() {
-  const input = document.getElementById("search");
-  const filter = input.value.toLowerCase();
-  const ul = document.getElementById("searchList");
-  const li = ul.getElementsByTagName("li");
-  const dropdown = document.getElementById("dropdownContent");
-
-  let hasMatch = false;
-
-  for (let i = 0; i < li.length; i++) {
-    const text = li[i].textContent.toLowerCase();
-    const match = text.startsWith(filter);
-    li[i].style.display = match ? "" : "none";
-    if (match) hasMatch = true;
-  }
-
-  dropdown.style.display = (filter && hasMatch) ? "block" : "none";
-}
-
-window.addEventListener("click", function (event) {
-  const input = document.getElementById("search");
-  const dropdown = document.getElementById("dropdownContent");
-
-  if (!input.contains(event.target) && !dropdown.contains(event.target)) {
-    dropdown.style.display = "none";
-  }
-});
-
-//NOTE -  END SRCH PART
-  
   
   //NOTE - THIS PART IF FOR THE DROPDOWNLIST OF THE PRODUCTS IN THE PROT1.1
 window.onclick = function(event) {
@@ -69,12 +38,9 @@ window.onclick = function(event) {
     content.style.display = content.style.display === "block" ? "none" : "block";
   }
 
-
-  function toggleDropdown(id) {
-    const content = document.getElementById(id);
-    if (content) {
-      content.style.display = content.style.display === "block" ? "none" : "block";
-    }
+  if (!event.target.closest('.searchCl') && !event.target.closest('#dropdownContent')) {
+    const searchDropdown = document.getElementById("dropdownContent");
+    if (searchDropdown) searchDropdown.style.display = "none";
   }
 
 
