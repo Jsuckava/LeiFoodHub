@@ -3,17 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="prot2.css">
+    <title>LEI's FoodHUB</title>
+    <link rel="stylesheet" href="prot3.css">
     <script src="function.jsx"></script>
 </head>
 <body>
-    <div class="grids">
-    <header></header>
-    <aside></aside>
-    <main></main>
-    <footer></footer>
-    </div>
+    <header>
+        <div class="logo">
+            <a href="prototype1.html"><img src="pictures And Icons/LOGOp2.png" alt="logo0"></a>
+           </div>
+   
+             <input type="text" class="searchCl" 
+              placeholder="Search" 
+              onkeyup="searchItems()" id="search"
+              onclick="toggleDropdown('dropdownContent')"
+              autocomplete="off">
+   
+             <div id="dropdownContent" class="dropdown-content">
+               <ul id="searchList">
+                 <li><a href="">CDO</a></li>
+                 <li>Purefoods</li>
+                 <li>Mommy Loida</li>
+                 <li>Frabelle</li>
+               </ul>
+             </div>
+        <nav>
+            <a href="prototype1.html">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About us</a>
+        </nav>          
+    </header>
     
+    <div class="wrap-box1">
+        <div>
+          <h2>Purefoods Tender Juicy Hotdog</h2>
+          <img src="pictures And Icons/PUREFO.png" alt="PUREFOODS">
+          <p>Purefoods Tender Juicy Hotdog <br>
+            is simply dummy text of the printing and typesetting industry. <br>
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>
+            It has survived not only five centuries, but also the leap into electronic typesetting,<br>
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset <br>
+            sheets containing Lorem Ipsum passages, and more recently with desktop publishing software <br>
+            like Aldus PageMaker including versions of Lorem Ipsum.
+          </p>
+          <p>Quantity: </p>
+          <section class="DecAdd">
+            <button class="aDec">-</button>
+            <input type="text" name="quantity" value="0" class="input"/>
+            <button class="bAdd">+</button>
+        </section>
+        <p class="Price"><strong>Price:   </strong><span>₱100</span> <section class="priceRemin">Price per Package
+            <span class="priceRtext">₱100 per Quantity</span>
+          </section></p>
+          <section>
+            <div class="wrap-box">
+              <div><a href="pr1.html" class="linkA"><img src="pictures And Icons/PUREFO.png" alt="Description 3"><h6>Purefoods Tender Juicy Hotdog <br><span>₱100</span></h6></a></div>
+              <div><a href="pr1.html" class="linkA"><img src="pictures And Icons/PUREFO.png" alt="Description 3"><h6>Purefoods Tender Juicy Hotdog <br><span>₱100</span></h6></a></div>
+              <div><a href="pr1.html" class="linkA"><img src="pictures And Icons/PUREFO.png" alt="Description 3"><h6>Purefoods Tender Juicy Hotdog <br><span>₱100</span></h6></a></div>
+              <div><a href="pr1.html" class="linkA"><img src="pictures And Icons/PUREFO.png" alt="Description 3"><h6>Purefoods Tender Juicy Hotdog <br><span>₱100</span></h6></a></div>
+              <div><a href="pr1.html" class="linkA"><img src="pictures And Icons/PUREFO.png" alt="Description 3"><h6>Purefoods Tender Juicy Hotdog <br><span>₱100</span></h6></a></div>
+              <div><a href="pr1.html" class="linkA"><img src="pictures And Icons/PUREFO.png" alt="Description 3"><h6>Purefoods Tender Juicy Hotdog <br><span>₱100</span></h6></a></div>
+              <div><a href="pr1.html" class="linkA"><img src="pictures And Icons/PUREFO.png" alt="Description 3"><h6>Purefoods Tender Juicy Hotdog <br><span>₱100</span></h6></a></div>
+              <div><a href="pr1.html" class="linkA"><img src="pictures And Icons/PUREFO.png" alt="Description 3"><h6>Purefoods Tender Juicy Hotdog <br><span>₱100</span></h6></a></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+        
+          
+
+
+
 </body>
 </html>

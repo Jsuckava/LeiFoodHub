@@ -76,6 +76,31 @@ window.onclick = function(event) {
       content.style.display = content.style.display === "block" ? "none" : "block";
     }
   }
-  //NOTE -  END DRP PT1.1
 
+
+//NOTE - Function of the Quantity Increment and Decrement in prot1 file
+  document.addEventListener("DOMContentLoaded", function() {
+    const buttonPlus = document.querySelector(".bAdd");
+    const buttonMinus = document.querySelector(".aDec");
+    const inputField = document.querySelector(".input");
+  
+    buttonPlus.addEventListener("click", function() {
+      let currentValue = parseInt(inputField.value);
+      inputField.value = currentValue + 1;
+    });
+  
+    buttonMinus.addEventListener("click", function() {
+      let currentValue = parseInt(inputField.value);
+      if (currentValue > 0) {
+        inputField.value = currentValue - 1;
+      }
+    });
+  
+    inputField.addEventListener("input", function() {
+      let currentValue = parseInt(inputField.value);
+      if (isNaN(currentValue) || currentValue < 0) {
+        inputField.value = 0;
+      }
+    });
+  });
   
