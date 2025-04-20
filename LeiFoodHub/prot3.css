@@ -140,6 +140,7 @@ text-decoration: underline 2px solid grey;
     font-size: 14px;
   }
   .aDec, .bAdd{
+    font-weight: bolder;
     position: relative;
     top: -15.6rem;
     right: -17rem;
@@ -263,7 +264,7 @@ text-decoration: underline 2px solid grey;
   border-right: none;
   margin-left: -5.7rem;
   margin-bottom: -5rem;
-  height: 50px;
+  height: 100px;
   width: 90px;
   border: 2px solid #000;
   border-radius: 10px;
