@@ -245,6 +245,7 @@ text-decoration: underline 2px solid grey;
   border-radius: 16px;
   object-fit: contain;
   margin: 0 auto 0.5rem;
+  cursor: pointer;
 }
 
 .wrap-box div:hover {
@@ -252,4 +253,18 @@ text-decoration: underline 2px solid grey;
   transform: scale(1.07);
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+}
+.Bt1{
+  background: none;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-right: none;
+  margin-left: -5.7rem;
+  margin-bottom: -5rem;
+  height: 50px;
+  width: 90px;
+  border: 2px solid #000;
+  border-radius: 10px;
 }
