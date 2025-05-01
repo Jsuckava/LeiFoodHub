@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   
     window.addEventListener("click", function (event) {
-      if (!input.contains(event.target) && !dropdown.contains(event.target)) {
+      if (!input.contains(event.target) || !dropdown.contains(event.target)) {
         dropdown.style.display = "none";
       }
     });
-  });
+  }); 

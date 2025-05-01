@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEI's FoodHUB</title>
+    <link rel="stylesheet" href="prot3.css">
+    <script src="function.jsx"></script>
+    <script src="SearchFuntion.jsx"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="prototype1.html"><img src="pictures And Icons/LOGOp2.png" alt="logo0"></a>
+           </div>
+   
+             <input type="text" class="searchCl" 
+              placeholder="Search" 
+              onkeyup="searchItems()" id="search"
+              onclick="toggleDropdown('dropdownContent')"
+              autocomplete="off">
+   
+             <div id="dropdownContent" class="dropdown-content">
+               <ul id="searchList">
+                 <li><a href="">CDO</a></li>
+                 <li>Purefoods</li>
+                 <li>Mommy Loida</li>
+                 <li>Frabelle</li>
+               </ul>
+             </div>
+        <nav>
+            <a href="prototype1.html">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About us</a>
+        </nav>          
+    </header>
+    <div class="wrap-box1">  
+    <section>
+      <a href="prot1.1.html"><button class="Bt1"><h4>Back</h4></button></a>
+    </section>
+        <div>
+            <h2>Frabelle Hotdogs 17pcs KINGSIZE</h2>
+            <img src="pictures And Icons/FBC2.jpg" >
+            <p>
+                Mekeni Specials Cooked Ham Loaf is a premium-quality, ready-to-eat delight perfect for every occasion. <br>
+                Made with select pork cuts and expertly seasoned, it offers a tender bite and a rich, savory flavor. <br>
+                Serve it in sandwiches, breakfast platters, or as a main dish—it’s a versatile addition to your meals. <br>
+                Convenient and delicious, Mekeni Ham Loaf brings a special touch to everyday dining.
+            </p>
+            <p>Quantity:</p>
+            <section class="DecAdd">
+              <button class="aDec">-</button>
+              <input type="text" name="quantity" value="0" class="input"/>
+              <button class="bAdd">+</button>
+              <button class="PayBtn" onclick="togglePaymentModal()">Pay now</button>
+            </section>            
+            <div id="modalWrapper" class="modal-wrapper" style="display: none;">
+                <div id="paymentModal" class="modal">
+                  <h3>Choose Payment Method</h3>
+                  <a href=""><button class="gcashBtn">GCash</button></a>
+                  <a href=""><button class="bankBtn">PayMaya</button></a> 
+                  <button class="closeModal" onclick="togglePaymentModal()">Cancel</button>
+                </div>
+              </div> 
+            <section>
+                <p class="Price"><strong>Price: </strong><span>₱160</span></p>
+            <section class="priceRemin">
+                Price per Package <span class="priceRtext">₱160 per Quantity</span>
+            </section> 
+            <br><br><br><br>
+            <div class="wrap-box">
+              <div>
+                <a href="pr1.html" class="linkA">
+                  <img src="pictures And Icons/Product-2023-Ham-Loaf.png" alt="CDO Idol Cheesedog">
+                  <h6> <br><span>₱100</span></h6>
+                </a>
+              </div>
+              <div>
+                <a href="pr1.html" class="linkA">
+                  <img src="pictures And Icons/Product-2023-Ham-Loaf.png" alt="CDO Idol Cheesedog">
+                  <h6> <br><span>₱100</span></h6>
+                </a>
+              </div>
+            </div>
+
+          
+          
+</body>
+</html>
